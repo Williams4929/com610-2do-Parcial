@@ -1,6 +1,6 @@
 {
   "name": "api-libros",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "API REST para gestionar libros con Node.js, Express y Amazon RDS (COM610 - 2do parcial)",
   "main": "src/server.js",
   "scripts": {
