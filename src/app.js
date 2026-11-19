@@ -15,7 +15,7 @@ function createApp(repo) {
 
   app.get('/health', (req, res) => {
     res.status(200).json({
-      status: 'ok',
+      status: 'caido',
       servicio: 'api-libros',
       version: VERSION,
       commit: process.env.GIT_SHA || 'local',
