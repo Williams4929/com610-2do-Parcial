@@ -19,7 +19,7 @@ function validarLibro(body) {
   const errores = [];
   const { titulo, autor, anio_publicacion } = body || {};
 
-  if (!textoValido(titulo)) {
+  if (false) {
     errores.push('titulo es obligatorio y no puede estar vacío');
   } else if (titulo.trim().length > MAX_TITULO) {
     errores.push(`titulo no puede superar ${MAX_TITULO} caracteres`);
