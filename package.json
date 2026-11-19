@@ -1,0 +1,18 @@
+{
+  "name": "api-libros",
+  "version": "1.0.0",
+  "description": "API REST para gestionar libros con Node.js, Express y Amazon RDS (COM610 - 2do parcial)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6"
+  }
+}
