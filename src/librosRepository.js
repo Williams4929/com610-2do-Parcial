@@ -12,7 +12,7 @@ function crearRepositorio(pool) {
 
   return {
     async listar() {
-      const [filas] = await pool.execute(`SELECT ${COLUMNAS} FROM libros ORDER BY id`);
+      const [filas] = await pool.execute(`SELECT ${COLUMNAS} FROM libros_error ORDER BY id`);
       return filas;
     },
 
