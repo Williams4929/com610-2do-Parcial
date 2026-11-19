@@ -14,7 +14,12 @@ function createApp(repo) {
   app.use(express.json());
 
   app.get('/health', (req, res) => {
-    res.status(200).json({ status: 'ok', servicio: 'api-libros', version: VERSION });
+    res.status(200).json({
+      status: 'ok',
+      servicio: 'api-libros',
+      version: VERSION,
+      commit: process.env.GIT_SHA || 'local',
+    });
   });
 
   app.get('/libros', async (req, res, next) => {
